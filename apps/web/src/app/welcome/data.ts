@@ -440,6 +440,7 @@ export const LANGUAGES: Language[] = [
     native: 'English',
     hi: 'hello',
     names: {
+      cs: 'Angličtina',
       en: 'English',
       es: 'Inglés',
       fr: 'Anglais',
@@ -456,6 +457,7 @@ export const LANGUAGES: Language[] = [
     native: 'Italiano',
     hi: 'ciao',
     names: {
+      cs: 'Italština',
       en: 'Italian',
       es: 'Italiano',
       fr: 'Italien',
@@ -472,6 +474,7 @@ export const LANGUAGES: Language[] = [
     native: '日本語',
     hi: 'こんにちは',
     names: {
+      cs: 'Japonština',
       en: 'Japanese',
       es: 'Japonés',
       fr: 'Japonais',
@@ -488,6 +491,7 @@ export const LANGUAGES: Language[] = [
     native: 'Français',
     hi: 'bonjour',
     names: {
+      cs: 'Francouzština',
       en: 'French',
       es: 'Francés',
       fr: 'Français',
@@ -504,6 +508,7 @@ export const LANGUAGES: Language[] = [
     native: 'Español',
     hi: 'hola',
     names: {
+      cs: 'Španělština',
       en: 'Spanish',
       es: 'Español',
       fr: 'Espagnol',
@@ -520,6 +525,7 @@ export const LANGUAGES: Language[] = [
     native: 'Deutsch',
     hi: 'hallo',
     names: {
+      cs: 'Němčina',
       en: 'German',
       es: 'Alemán',
       fr: 'Allemand',
@@ -536,6 +542,7 @@ export const LANGUAGES: Language[] = [
     native: 'Português',
     hi: 'olá',
     names: {
+      cs: 'Portugalština',
       en: 'Portuguese',
       es: 'Portugués',
       fr: 'Portugais',
@@ -552,6 +559,7 @@ export const LANGUAGES: Language[] = [
     native: '한국어',
     hi: '안녕',
     names: {
+      cs: 'Korejština',
       en: 'Korean',
       es: 'Coreano',
       fr: 'Coréen',
@@ -568,6 +576,7 @@ export const LANGUAGES: Language[] = [
     native: 'العربية',
     hi: 'مرحبا',
     names: {
+      cs: 'Arabština',
       en: 'Arabic',
       es: 'Árabe',
       fr: 'Arabe',
@@ -581,6 +590,7 @@ export const LANGUAGES: Language[] = [
 ];
 
 export const BASE_LANGS: BaseLang[] = [
+  { code: 'cs', name: 'Čeština' },
   { code: 'en', name: 'English' },
   { code: 'ru', name: 'Русский' },
   { code: 'es', name: 'Español' },

@@ -23,6 +23,7 @@ function LanguageChoice() {
 }
 
 it.each([
+  { source: 'Čeština', target: 'English', pair: 'cs:en' },
   { source: 'Русский', target: 'German', pair: 'ru:de' },
   { source: 'Español', target: 'French', pair: 'es:fr' },
 ])('continues with $pair after choosing both sides of the language bridge', async (choice) => {
@@ -38,4 +39,15 @@ it.each([
   );
   await user.click(next);
   expect(screen.getByLabelText('Selected language pair')).toHaveTextContent(choice.pair);
+});
+
+it('shows the English course name in Czech for a Czech speaker', async () => {
+  const user = userEvent.setup();
+  render(<LanguageChoice />);
+  await user.click(screen.getByRole('button', { name: 'Čeština' }));
+  const english = screen.getByRole('button', { name: 'Learn English' });
+  expect(english).toHaveTextContent('Angličtina');
+  await user.click(english);
+  expect(english).toHaveAttribute('aria-pressed', 'true');
+  expect(screen.getByRole('button', { name: 'Čeština' })).toHaveAttribute('aria-pressed', 'true');
 });
